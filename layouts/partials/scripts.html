@@ -149,7 +149,7 @@
   }
 
   async function copyCodeToClipboard(button, highlightDiv) {
-    const codeTxt =  highlightDiv.querySelector(":last-child > .chroma > code").innerText || false;
+    const codeTxt =  highlightDiv.querySelector(":last-child > .chroma > code").innerText ? highlightDiv.querySelector(":last-child > .chroma > code").innerText : false;
     const preTxt = highlightDiv.querySelector(".chroma .lntd:last-child pre").innerText;
     const codeToCopy = codeTxt ? codeTxt : preTxt;
     await navigator.clipboard.writeText(codeToCopy);
