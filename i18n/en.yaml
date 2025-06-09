@@ -100,3 +100,9 @@ categoryCounter:
 
 zeroCategoryCounter:
   other: "No categories"
+
+caution: Caution
+important: Important
+note: Note
+tip: Tip
+warning: Warning  
